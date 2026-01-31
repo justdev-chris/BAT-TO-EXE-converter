@@ -5,7 +5,7 @@ import subprocess
 def run_bat_from_exe():
     bat_content = '''
 @echo off
-title stupid nigger game thing
+test
 pause
 '''
  
